@@ -7,7 +7,9 @@ import json
 import time
 import cPickle
 import numpy
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import random
 import math
 import string
