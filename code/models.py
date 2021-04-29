@@ -1,6 +1,7 @@
 import numpy
-import tensorflow as tf
-
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 def define_CNN_model(utterance_representations_full, num_filters=300, vector_dimension=300, longest_utterance_length=40):
     """
