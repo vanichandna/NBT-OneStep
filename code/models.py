@@ -259,12 +259,12 @@ def model_definition(vector_dimension, label_count, slot_vectors, value_vectors,
     update_coefficient = tf.constant(0.49)
 
     if use_softmax:
+        
+        if learn_belief_state_update:
 
-        if True:
-            #one step markovian
-        #if learn_belief_state_update:
-
-            if value_specific_decoder: # value-specific update
+            if True:
+             #one step   
+            #if value_specific_decoder: # value-specific update
                 
                 update_coefficient = tf.constant(0.8)
 
